@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap"
+			rel="stylesheet"
+		/>
+		<link rel="stylesheet" type="text/css" href="index.css" />
+		<title>RSS Radium Girls</title>
+	</head>
+	<!-- THIS IS WHAT SHOWS UP -->
+
+	<body>
+		<header>
+			<h1>Renaissance Secondary Presents:</h1>
+			<h2>Radium Girls Escape Rooms</h2>
+		</header>
+        <img id='radium-img' src='./radium-girls.png'></img>
+        <br />
+        <br />
+        <br />
+        <div id='dropdown-section'>
+        <label>Escape Room: </label>
+        <select id='dropdown-menu' onchange='selection()'>
+            <option value='1'>Room 1</option>
+            <option value='2'>Room 2</option>
+            <option value='3'>Room 3</option>
+            <option value='4'>Room 4</option>
+        </select>
+    </div>
+        <br />
+        <label>4-Digit Code:</label>
+        <input id='code-text-input'></input>
+        <button id='check-code-button' onclick='checkAnswer()'>Submit</button>
+
+            <text id='error-text'>*Your code should be exactly four digits.</text>
+            <text id='win-text'>Congratulations! You've escaped! Show this to a teacher to claim your prize!</text>
+            <text id='lose-text'>Whoops! You have made an error and did not escape! Try again.</text>
+
+		<script src="script.js"></script>
+	</body>
+</html>

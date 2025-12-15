@@ -1,0 +1,56 @@
+/* id's are unique, identified with the # */
+/* classnames are shared, identified with a period . */
+
+/* THINGS YOU CAN DO TO TEXT */
+* {
+	font-family: 'Abril Fatface', serif;
+}
+body {
+	text-align: center;
+}
+
+#radium-img {
+	text-align: center;
+}
+#dropdown-section {
+	display: flex;
+	justify-content: center;
+}
+
+#dropdown-menu {
+	margin: 0 0 0 10px;
+}
+#code-text-input {
+	margin: 0 0 0 10px;
+}
+#check-code-button {
+	margin: 0 0 0 10px;
+}
+
+#error-text {
+	display: none;
+	margin: 10px 0 0 0;
+	color: crimson;
+}
+#win-text {
+	display: none;
+	margin: 10px 0 0 0;
+	color: rgb(47, 182, 10);
+}
+#lose-text {
+	display: none;
+	margin: 10px 0 0 0;
+	color: rgb(220, 87, 20);
+}
+
+@keyframes move {
+	0% {
+		top: 0%;
+		right: 0%;
+	}
+
+	100% {
+		top: 72%;
+		right: 40%;
+	}
+}
